@@ -1,0 +1,20 @@
+.postPreviewContainer {
+  max-width: 400px;
+  padding: 30px 30px 0;
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.postPreviewImageContainer {
+  border-radius: 15px;
+  box-shadow: 0 3px 12px -1px rgb(7 10 25 / 20%), 0 22px 27px -20px rgb(7 10 25 / 20%);
+  overflow: hidden;
+}
+
+.postPreviewExcerpt {
+  line-height: 1.5;
+}
+
+.postPreviewImage {
+  object-fit: cover;
+}

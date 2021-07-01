@@ -3,6 +3,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 30px 30px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .blogContentFooterTitle {
