@@ -1,0 +1,26 @@
+.blogContentFooter {
+  background: #0A86F9;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px 30px;
+}
+
+.blogContentFooterTitle {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.blogContentFooterTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 35px;
+  height: 4px;
+  background: #FFD012;
+  border-radius: 4px;
+}
+
+.footerTitle {
+  color: #fff;
+}

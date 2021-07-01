@@ -1,0 +1,55 @@
+.blogContentHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 30px;
+  margin: 0 auto;
+  background: #0A86F9;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.searchField {
+  font-size: 15px;
+  background: rgba(0,0,0,0.15);
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  width: 340px;
+}
+
+.searchField::placeholder { 
+  color: #fff;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  transition: .3s opacity;
+  cursor: pointer;
+}
+
+.searchIcon:hover {
+  opacity: .5;
+}
+
+.filtersContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+}
+
+.selectableField {
+  border: 3px solid rgba(0,0,0,0.15);
+  background: transparent;
+  padding: 10px 25px;
+  color: #fff;
+  outline: none;
+  border-radius: 25px;
+  font-size: 15px;
+  width: 230px;
+}

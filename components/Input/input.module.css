@@ -1,0 +1,55 @@
+.inputContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.selectContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  max-width: 210px;
+  height: fit-content;
+  max-height: 220px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 0 0 1px rgb(68 68 68 / 11%);
+  overflow: auto;
+  z-index: 999;
+  margin-top: 7px;
+}
+
+.selectItem {
+  padding: 10px 15px;
+  transition: .3s all;
+  cursor: pointer;
+}
+
+.selectItem:hover {
+  background: #f6f6f6;
+}
+
+.selectContainerOpened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.selectItemActive {
+  font-weight: 600;
+  background: #f6f6f6;
+}
+
+.arrowDown {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .15;
+  transition: .2s transform;
+}
+
+.arrowDownActive {
+  transform: rotate(180deg) translateY(50%);
+}

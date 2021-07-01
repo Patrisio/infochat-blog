@@ -1,0 +1,24 @@
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+}
+
+.tag {
+  padding: 10px 15px;
+  background: rgba(0,0,0,0.12);
+  color: #fff;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: .2s all;
+}
+
+.tag:not(:last-child) {
+  margin-right: 10px;
+}
+
+.tag:hover {
+  background: rgba(0,0,0,0.2);
+}
