@@ -1,0 +1,18 @@
+.detailedPostContentContainer {
+  display: flex;
+  background: #fff;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.postTitle {
+
+}
+
+.mainContent {
+  border-right: 1px solid #e5e5e5;
+  padding: 0 60px;
+  max-width: 840px;
+}

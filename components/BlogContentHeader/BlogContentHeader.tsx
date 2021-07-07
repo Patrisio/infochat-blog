@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
@@ -8,9 +9,19 @@ import { categories, authors } from '../../lib/constants';
 import styles from './blogContentHeader.module.css';
 
 export default function BlogContentHeader() {
+  const router = useRouter();
+
   const inputSearchFieldHandler = (e: any) => {
     const value = e.target.value;
     console.log(value);
+  };
+
+  const onChangeCategory = (categoryId: string) => {
+    router.push(`/category/${categoryId}`);
+  };
+
+  const onChangeAuthor = (authorName: string) => {
+    router.push(`/author/${authorName}`);
   };
 
   const findPostsByQuery = () => {
@@ -41,14 +52,14 @@ export default function BlogContentHeader() {
       <div className={styles.filtersContainer}>
         <Input
           classNames={styles.selectableField}
-          onChange={inputSearchFieldHandler}
+          selectOption={onChangeCategory}
           data={categories}
           readOnly
         />
 
         <Input
           classNames={styles.selectableField}
-          onChange={inputSearchFieldHandler}
+          selectOption={onChangeAuthor}
           data={authors}
           readOnly
         />

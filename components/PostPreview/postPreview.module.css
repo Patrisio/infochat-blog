@@ -17,4 +17,5 @@
 
 .postPreviewImage {
   object-fit: cover;
+  cursor: pointer;
 }

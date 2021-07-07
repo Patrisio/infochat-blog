@@ -1,13 +1,12 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-
 import Title from '../Typography/Title/Title';
 import Tags from '../Tags/Tags';
 
+import styles from './sidebar.module.css';
 import { categories } from '../../lib/constants';
-import styles from './BlogContentFooter.module.css';
 
-export default function BlogContentFooter() {
+export default function Sidebar() {
   const router = useRouter();
 
   const goToSelectedCategory = (categoryId: string) => {
@@ -15,15 +14,16 @@ export default function BlogContentFooter() {
   };
 
   return (
-    <div className={styles.blogContentFooter}>
-      <div className={styles.blogContentFooterTitle}>
+    <div className={styles.sidebarContainer}>
+      <div className={styles.categoriesTitle}>
         <Title level='2' weight='bold' classNames={styles.footerTitle}>Рубрики</Title>
       </div>
 
       <Tags
         items={categories}
         onClick={goToSelectedCategory}
+        classNames={styles.tag}
       />
     </div>
   );
-} 
+}

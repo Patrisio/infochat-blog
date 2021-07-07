@@ -14,8 +14,7 @@ interface Home {
 
 export function getStaticProps() {
   const allPosts = getAllPosts();
-  console.log(allPosts, 'allPosts');
-
+  console.log(allPosts);
   return {
     props: {
       posts: allPosts,

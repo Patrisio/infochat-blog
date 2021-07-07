@@ -34,7 +34,7 @@ export default function Input({
   const [fieldValue, setValue] = useState<string>(data ? data[0].value : defaultValue);
   const [isOpen, toggleOpen] = useState(false);
 
-  const clickHandler = () => {
+  const clickHandler = (e: any) => {
     if (data && data.length > 0) {
       toggleOpen(prev => !prev);
     }
@@ -57,6 +57,7 @@ export default function Input({
           placeholder={placeholder}
           value={fieldValue}
           onChange={(e) => {
+            console.log('HERE');
             setValue(e.target.value);
             onChange && onChange(e);
           }}

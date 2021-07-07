@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 import logo from '../../public/images/logo.png';
 import styles from './footer.module.css';
@@ -7,9 +8,8 @@ import styles from './footer.module.css';
 export default function Header() {
   return (
     <div className={styles.footerContainer}>
-      <a
-        target='_blank'
-        href='https://infochat.com'
+      <Link
+        href='/'
       >
         <Image
           src={logo}
@@ -17,7 +17,7 @@ export default function Header() {
           width={200}
           height={54}
         />
-      </a>
+      </Link>
     </div>
   );
 }

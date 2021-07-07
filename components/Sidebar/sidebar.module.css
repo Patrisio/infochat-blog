@@ -1,0 +1,31 @@
+.sidebarContainer {
+  padding: 0 30px;
+  max-width: 300px;
+}
+
+.categoriesTitle {
+  position: relative;
+  margin: 45px 0 60px;
+}
+
+.categoriesTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 35px;
+  height: 4px;
+  background: #FFD012;
+  border-radius: 4px;
+}
+
+.tag {
+  background: #FFD012;
+  color: #000;
+  transition: .3s all;
+}
+
+.tag:hover {
+  background: #000;
+  color: #fff;
+}
